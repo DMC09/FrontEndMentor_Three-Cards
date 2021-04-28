@@ -19,7 +19,7 @@ html {
   height: 100%;
 }
 body {
-  border: 1px solid red;
+
   height: 100%;
   padding: 2rem 1rem;
 display: grid;
@@ -28,7 +28,7 @@ grid-template-rows: repeat(3,1fr)
 }
 // General card CSS
 .card {
-  border: 2px dashed red;
+
   padding: 3rem 2rem;
   img{
     margin-bottom: 1.5rem;
@@ -38,10 +38,15 @@ grid-template-rows: repeat(3,1fr)
     font-size: 2rem;
     color:$Verylightgray;
     text-transform: uppercase;
+    margin-bottom: 1.5rem;
+
   }
   p{
     color:$Transparentwhite;
-    line-height: 1.5;
+    line-height: 2;
+    margin-bottom: 1.5rem;
+    width: 85%;
+
   }
 button{
   border-radius: $btnRadius;
@@ -71,6 +76,7 @@ button{
   border-bottom-left-radius: $borderRadius;
   border-bottom-right-radius: $borderRadius;
   background: $Verydarkcyan;
+margin-bottom: 3rem;
   button{
     color: $Verydarkcyan;
   }
