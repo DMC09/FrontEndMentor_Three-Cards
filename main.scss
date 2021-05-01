@@ -22,10 +22,9 @@ body {
 
   height: 100%;
   padding: 2rem 1rem;
-display: grid;
-place-items:center;
-grid-template-rows: repeat(3,1fr)
+
 }
+
 // General card CSS
 .card {
 
@@ -76,7 +75,6 @@ button{
   border-bottom-left-radius: $borderRadius;
   border-bottom-right-radius: $borderRadius;
   background: $Verydarkcyan;
-margin-bottom: 3rem;
   button{
     color: $Verydarkcyan;
   }
@@ -84,6 +82,37 @@ margin-bottom: 3rem;
 
 @media screen and (min-width: 400px) {
   body {
-    border: 1px solid green;
+  background: white;
+  display: grid;
+  place-items:center;
+
+  }
+  .attribution{
+    position: absolute;
+    left: 40%;
+  }
+  main {
+    display: grid;
+   grid-template-rows: minmax(80%,450px);
+ grid-template-columns: repeat(3,minmax(33%,350px));
+  }
+  .sedan{
+    border-radius: $borderRadius 0 0 $borderRadius;
+  }
+
+  .luxury {
+    border-radius: 0 $borderRadius $borderRadius 0;
+  }
+  .card{
+    display: flex;
+flex-flow: column;
+justify-content: space-between;
+align-items: flex-start;
+    h1{
+      font-size: 3rem;
+    }
+    p{
+padding-bottom: 3rem;
+    }
   }
 }
