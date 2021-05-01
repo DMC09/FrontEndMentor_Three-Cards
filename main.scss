@@ -12,107 +12,102 @@ $btnRadius: 20px;
 // Fonts
 $Main: "Big Shoulders Display", cursive;
 $Headers: "Lexend Deca", sans-serif;
-:root{
+:root {
   font-size: 15px;
 }
 html {
   height: 100%;
 }
 body {
-
   height: 100%;
   padding: 2rem 1rem;
-
 }
-
+.attribution{
+  padding: 1rem 0;
+  text-align: center;
+}
 // General card CSS
 .card {
-
   padding: 3rem 2rem;
-  img{
+  img {
     margin-bottom: 1.5rem;
   }
-  h1{
+  h1 {
     font-family: $Headers;
     font-size: 2rem;
-    color:$Verylightgray;
+    color: $Verylightgray;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
-
   }
-  p{
-    color:$Transparentwhite;
+  p {
+    color: $Transparentwhite;
     line-height: 2;
     margin-bottom: 1.5rem;
     width: 85%;
-
   }
-button{
-  border-radius: $btnRadius;
-  background:  $Verylightgray;
-  border: 0;
-  padding: 1rem 2rem;
+  button {
+    border-radius: $btnRadius;
+    background: $Verylightgray;
+    border: 0;
+    padding: 1rem 2rem;
+  }
 }
-}
-
+//Individual card tysling
 .sedan {
   border-top-left-radius: $borderRadius;
   border-top-right-radius: $borderRadius;
   background: $Brightorange;
-button{
-  color: $Brightorange;
-}
-
+  button {
+    color: $Brightorange;
+  }
 }
 .SUV {
   background: $Darkcyan;
-  button{
+  button {
     color: $Darkcyan;
   }
 }
-
 .luxury {
   border-bottom-left-radius: $borderRadius;
   border-bottom-right-radius: $borderRadius;
   background: $Verydarkcyan;
-  button{
+  button {
     color: $Verydarkcyan;
   }
 }
 
 @media screen and (min-width: 400px) {
   body {
-  background: white;
-  display: grid;
-  place-items:center;
-
+    background: white;
+    display: grid;
+    place-items: center;
   }
-  .attribution{
+  .attribution {
     position: absolute;
     left: 40%;
   }
   main {
     display: grid;
-   grid-template-rows: minmax(80%,450px);
- grid-template-columns: repeat(3,minmax(33%,350px));
+    grid-template-rows: minmax(80%, 450px);
+    grid-template-columns: repeat(3, minmax(33%, 350px));
   }
-  .sedan{
+  .sedan {
     border-radius: $borderRadius 0 0 $borderRadius;
   }
 
   .luxury {
     border-radius: 0 $borderRadius $borderRadius 0;
   }
-  .card{
+  .card {
     display: flex;
-flex-flow: column;
-justify-content: space-between;
-align-items: flex-start;
-    h1{
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    h1 {
       font-size: 3rem;
     }
-    p{
-padding-bottom: 3rem;
+    p {
+      padding-bottom: 3rem;
     }
   }
 }
